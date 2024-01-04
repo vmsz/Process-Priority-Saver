@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Process Priority Saver</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://rawcdn.githack.com/eligrey/Blob.js/9f7eb544f3c2cd6cf8c50dea8b47bd6634411b50/Blob.js"></script>
+    <script src="https://rawcdn.githack.com/eligrey/FileSaver.js/cea522bc41bfadc364837293d0c4dc585a65ac46/dist/FileSaver.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://lh3.googleusercontent.com/u/1/drive-viewer/AEYmBYRgjOcOh47ak9yRYp7Uj7MAniweMiXlwW9VtmMP-vX51i6I8EEHFK2b1KJpKVxA0g8y40tj8FYu481RUbq4PYRROEqF=w1920-h973"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <p>Process Priority Saver</p>
+      </div>
+      <div class="form">
+        <div class="form-elements">
+          <label for="process">Process Name</label>
+          <input type="text" name="process" id="process" />
+        </div>
+        <div class="form-elements">
+          <label for="priority">Priority</label>
+          <select name="priority" id="priority">
+            <option value="0" selected></option>
+            <option value="3">High</option>
+            <option value="6">Above Normal</option>
+            <option value="2">Normal</option>
+            <option value="5">Below Normal</option>
+            <option value="1">Low</option>
+          </select>
+        </div>
+        <div class="form-elements">
+          <button id="create-file">Create File</button>
+        </div>
+        <div class="form-elements">
+          <p id="warning"></p>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
